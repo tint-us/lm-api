@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  lm-api:
+    build: .
+    container_name: lm-api
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    environment:
+      APP_TOKEN: "ganti_token_rahasia_kamu"
+      SOURCE_URL: "https://emasantam.id/harga-emas-antam-harian/"
+      CACHE_TTL_SEC: "300"
+      HTTP_TIMEOUT: "12"
+      HTTP_RETRIES: "3"
