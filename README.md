@@ -69,7 +69,7 @@ Contoh response:
 
 ### 2. Ambil harga emas (dengan auth)
 ```bash
-curl -s -H "Authorization: Bearer abcde" http://localhost:8088/harga | jq
+curl -s -H "Authorization: Bearer isi_token_rahasia_kamu" http://localhost:8088/harga | jq
 ```
 
 Contoh response:
