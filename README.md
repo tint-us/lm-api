@@ -125,10 +125,16 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8088
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing 
 Pull request dipersilakan! Untuk fitur baru / bugfix, buat branch lalu PR ke `main`.
 
 ---
+
+## 🤝 Collaboration 
+Just drop your email to tintus.ardi@gmail.com.
+
+---
+
 
 ## 📜 License
 MIT License. Lihat [LICENSE](LICENSE) file untuk detail.
