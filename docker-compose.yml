@@ -7,8 +7,8 @@ services:
     ports:
       - "8088:8088"
     environment:
-      APP_TOKEN: "ganti_token_rahasia_kamu"
-      SOURCE_URL: "https://emasantam.id/harga-emas-antam-harian/"
-      CACHE_TTL_SEC: "300"
-      HTTP_TIMEOUT: "12"
-      HTTP_RETRIES: "3"
+      APP_TOKEN: ${APP_TOKEN}                       # <-- ambil dari .env
+      SOURCE_URL: ${SOURCE_URL:-https://emasantam.id/harga-emas-antam-harian/}
+      CACHE_TTL_SEC: ${CACHE_TTL_SEC:-300}
+      HTTP_TIMEOUT: ${HTTP_TIMEOUT:-12}
+      HTTP_RETRIES: ${HTTP_RETRIES:-3}
